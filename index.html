@@ -7,33 +7,40 @@
 
     <style>
         body {
-            background-color: white; 
-            font-family: Arial, sans-serif;
-            margin: 40px;
+            background-color: white;
+            font-family: "Arial Nova Cond", "Arial", sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
         }
 
         .intro {
             font-size: 60px;
-            margin-top: 40px;
+            margin-bottom: 20px;
         }
 
         .description {
-            font-size: 20px;
+            font-size: 34px;
             color: #333;
         }
 
         .background-section {
-            display: flex;
-            align-items: flex-start;
-            margin-top: 150px;
+            padding: 50px;
+            text-align: left;
         }
 
         .background-title {
-            color: #8B0000; /* Rosso scuro */
+            color: #8B0000;
             font-size: 20px;
             font-weight: bold;
-            margin-right: 20px;
-			text-transform: uppercase;
+            text-transform: uppercase;
         }
 
         .background-text {
@@ -41,30 +48,37 @@
             max-width: 600px;
             font-size: 18px;
         }
+
+        .scroll-link {
+            margin-top: 30px;
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Sezione di Presentazione -->
-    <div class="intro">Hi!</div>
-    <br><br>
-    <div class="description">
-        I'm <strong>Francesco Chiarantini</strong>, a passionate gamer<br>
-	in love with worldbuilding and storytelling.
+    <!-- Sezione centrata -->
+    <div class="container">
+        <div class="intro">Hi!</div>
+        <div class="description">
+            I'm <strong>Francesco Chiarantini</strong>, a passionate gamer<br>
+            in love with worldbuilding and storytelling.
+        </div>
+        <div class="scroll-link">
+            <a href="#background-section">↓ Scroll Down</a>
+        </div>
     </div>
 
     <!-- Sezione Background -->
-    <div class="background-section">
+    <div id="background-section" class="background-section">
         <div class="background-title">Background</div>
         <div class="background-text">
-            Coming from years of experience in the movie industry as a Location and Unit Manager, 
-            I decided to pursue my passion in game development.<br>
-	    I pursued Epic Games' certification of Game Design on Unreal 5, starting to work on a few little projects, 
-            as well as learning the basics of C++ programming.
+            Coming from 5 years of experience in the movie industry as a Location and Unit Manager, 
+            I decided to pursue my passion in game development.<br>I obtained Epic Games' certification 
+            of Game Design on Unreal 5, starting to work on a few personal projects, 
+            as well as studying the basics of C++ programming.
         </div>
     </div>
 
 </body>
 </html>
-
-
