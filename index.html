@@ -19,20 +19,20 @@
             align-items: flex-start; /* Allinea a sinistra */
             height: 100vh;
             text-align: left; /* Testo allineato a sinistra */
-            padding-left: 300px; /* Opzionale: aggiunge un margine a sinistra */
-            padding-top: 20vh; /* Regola la posizione verticale */
+            padding-left: 350px; /* Opzionale: aggiunge un margine a sinistra */
+            padding-top: 22vh; /* Regola la posizione verticale */
 
 
         }
         
         .profile-img {
-    width: 100px; /* Regola la dimensione */
-    height: 100px; /* Mantieni proporzioni */
+    width: 300px; /* Regola la dimensione */
+    height: 300px; /* Mantieni proporzioni */
     border-radius: 50%; /* Rende l'immagine circolare */
     object-fit: cover; /* Evita distorsioni */
     position: absolute; /* Posizione assoluta */
-    top: 150px; /* Distanza dal bordo superiore */
-    right: 300px; /* Distanza dal bordo destro */
+    top: 500px; /* Distanza dal bordo superiore */
+    right: 350px; /* Distanza dal bordo destro */
 }
 
 
@@ -44,6 +44,11 @@
 
         .description {
             font-size: 34px;
+            color: #333;
+        }
+        
+         .undertext {
+            font-size: 20px;
             color: #333;
         }
 
@@ -76,17 +81,20 @@
 </head>
 <body>
 
-    <!-- Sezione centrata -->
+    <!-- Intro -->
     <div class="container">
         <div class="intro">Hi!</div>
         <div class="description">
             I'm <strong>Francesco Chiarantini</strong>, a passionate gamer<br>
-            in love with worldbuilding and storytelling.
+            in love with worldbuilding and storytelling.<br><br><br><br><br>
         </div>
-      <img src="Profile pic.jpg" alt="Profile Picture" class="profile-img">      
+        <div class="undertext">Currently studying Unreal 5 and C++<br>
+        I look forward to put myself to the test and grow.
+        </div>
+      <img src="Profile pic.jpg" alt="Profile Picture" class="profile-img">
     </div>
 
-    <!-- Sezione Background -->
+    <!--  Background -->
     <div id="background-section" class="background-section">
         <div class="background-title">Background</div>
         <div class="background-text">
