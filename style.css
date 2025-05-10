@@ -1,12 +1,12 @@
 <head>
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
+           body {
+                background-color: #d3d3d3; /* Grigio chiaro */
+                font-family: Arial, sans-serif;
+                color: #333;
+                text-align: center;
+                padding: 50px;
+            }
 
         .container {
             max-width: 800px;
