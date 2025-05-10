@@ -19,7 +19,7 @@
             align-items: flex-start; /* Allinea a sinistra */
             height: 100vh;
             text-align: left; /* Testo allineato a sinistra */
-            padding-left: 40px; /* Opzionale: aggiunge un margine a sinistra */
+            padding-left: 100px; /* Opzionale: aggiunge un margine a sinistra */
             padding-top: 20vh; /* Regola la posizione verticale */
 
 
@@ -28,6 +28,7 @@
         .intro {
             font-size: 60px;
             margin-bottom: 60px;
+             color: #333;
         }
 
         .description {
@@ -35,24 +36,28 @@
             color: #333;
         }
 
-        .background-section {
-            align-items: center;
-            padding: 40px;
-            text-align: left;
-        }
+       .background-section {
+    display: flex; /* Dispone il titolo e il testo sulla stessa riga */
+    align-items: center; /* Centra tutto orizzontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: left; /* Mantiene il testo allineato a sinistra */
+}
 
-        .background-title {
-            color: #8B0000;
-            font-size: 20px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
+.background-title {
+    color: #8B0000;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-self: flex-start; /* Mantiene il titolo allineato a sinistra rispetto al testo */
+}
 
-        .background-text {
-            color: #333;
-            max-width: 600px;
-            font-size: 18px;
-            padding-left: 120px;
+.background-text {
+    color: #333;
+    max-width: 600px;
+    font-size: 18px;
+    padding-left: 40px; /* Ridotto per un allineamento più naturale */
+}
+
         }
         
     </style>
