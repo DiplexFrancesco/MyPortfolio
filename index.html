@@ -26,14 +26,32 @@
         }
         
         .profile-img {
-    width: 300px; /* Regola la dimensione */
-    height: 300px; /* Mantieni proporzioni */
+    width: 150px; /* Regola la dimensione */
+    height: 150px; /* Mantieni proporzioni */
     border-radius: 50%; /* Rende l'immagine circolare */
     object-fit: cover; /* Evita distorsioni */
     position: absolute; /* Posizione assoluta */
     top: 500px; /* Distanza dal bordo superiore */
     right: 350px; /* Distanza dal bordo destro */
 }
+
+        .btn {
+    position: absolute;
+    top: 900px; /* Distanza dal bordo superiore */
+    left: 1500px; /* Distanza dal bordo sinistro */
+    background: none;
+    color: #8B0000;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
+
 
 
         .intro {
@@ -51,6 +69,7 @@
             font-size: 20px;
             color: #333;
         }
+        
 
        .background-section {
     display: flex; /* Dispone il titolo e il testo sulla stessa riga */
@@ -93,6 +112,11 @@
         </div>
       <img src="Profile pic.jpg" alt="Profile Picture" class="profile-img">
     </div>
+    
+    <a href="https://www.linkedin.com/in/francesco-chiarantini">
+    <button class="btn">LinkedIn</button><br>
+</a>
+
 
     <!--  Background -->
     <div id="background-section" class="background-section">
@@ -104,8 +128,9 @@
             development.<br><br>
             
             Drawing from my experience working in both large and small teams, performing under high-stakes pressure,
-            and meeting deadlines through creative problem-solving, I am now focused on developing
-            the technical skills to match my passion for the gaming world, where I dwell both as a consumer and a
+            and meeting deadlines through creative problem-solving, <strong>I am now focused on growing and developing
+            the technical skills to match my passion for the gaming world</strong>, 
+            where I dwell both as a consumer anda
             scholar.<br>I never miss to deep-dive in the market analysis and new trends, as well as monitoring big
             studios'
             curves. (Indie and AA games are the new winning bet if you ask me)<br><br>
