@@ -1,7 +1,7 @@
 <head>
     <style>
            body {
-                background-color: #d3d3d3; /* Grigio chiaro */
+                background-color: #d3d3d3 !important; /* Grigio chiaro */
                 font-family: Arial, sans-serif;
                 color: #333;
                 text-align: center;
