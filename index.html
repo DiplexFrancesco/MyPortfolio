@@ -4,45 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il mio Portfolio</title>
-    
+
     <style>
         body {
             background-color: white; 
             font-family: Arial, sans-serif;
+            margin: 40px;
         }
 
         .intro {
-            position: absolute;
-            top: 40px;
-            left: 40px;
-            text-align: left;
-            font-size: 40px;
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 20px;
             color: #333;
         }
 
-        strong {
-            font-weight: bold;
+        .background-section {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 100px;
         }
 
+        .background-title {
+            color: #8B0000; /* Rosso scuro */
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 20px;
+			text-transform: uppercase;
+        }
+
+        .background-text {
+            color: #333;
+            max-width: 600px;
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
-        <div class="intro">
-        <p style="font-size: 60px; font-weight: bold; margin-bottom: 20px;">Hello</p>
-        <br><br>
-        <p>I'm <strong>Francesco Chiarantini</strong>, a passionate gamer <br>in love with world-building and storytelling.</p>
-        <br>
+
+    <!-- Sezione di Presentazione -->
+    <div class="intro">Hi!</div>
+    <br><br>
+    <div class="description">
+        I'm <strong>Francesco Chiarantini</strong>, a passionate game development student.
     </div>
 
-        <div style="display: flex; align-items: flex-start; margin-top: 50px;">
-    <h2 style="color: #8B0000; margin-right: 20px;">Background</h2>
-    <p style="color: #333; max-width: 600px;">
-        Coming from years of experience in the movie industry as a Location and Unit Manager, 
-        I decided to pursue my passion in game development. I obtained Epic Games' certification 
-        of Game Design on Unreal 5, starting to work on a few personal projects, 
-        as well as learning the basics of C++ programming.
-    </p>
-</div>
+    <!-- Sezione Background -->
+    <div class="background-section">
+        <div class="background-title">Background</div>
+        <div class="background-text">
+            Coming from years of experience in the movie industry as a Location and Unit Manager, 
+            I decided to pursue my passion in game development. I pursued Epic Games' certification 
+            of Game Design on Unreal 5, starting to work on a few little projects, 
+            as well as learning the basics of C++ programming.
+        </div>
+    </div>
 
 </body>
 </html>
