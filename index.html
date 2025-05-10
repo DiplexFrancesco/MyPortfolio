@@ -25,7 +25,7 @@
 
         }
         
-      .profile-img {
+        .profile-img {
     width: 200px; /* Regola la dimensione */
     height: 200px; /* Mantieni proporzioni */
     border-radius: 50%; /* Rende l'immagine circolare */
@@ -95,6 +95,39 @@
 }
 
         }
+        
+@media (max-width: 768px) {
+    .container {
+        padding-left: 20px; /* Riduce il margine laterale */
+        padding-top: 10vh; /* Adatta la posizione verticale */
+        align-items: center; /* Centra gli elementi */
+        text-align: center; /* Centra il testo */
+    }
+
+    .profile-img {
+        position: static; /* Annulla la posizione assoluta */
+        width: 150px; /* Ridimensiona l'immagine */
+        height: 150px;
+        margin: 20px auto; /* Centra l'immagine */
+    }
+
+    .btn {
+        position: static; /* Annulla la posizione assoluta */
+        display: block;
+        margin: 20px auto; /* Centra il bottone */
+    }
+
+    .background-section {
+        flex-direction: column; /* Dispone il testo in colonna */
+        align-items: center;
+        text-align: center;
+    }
+
+    .background-text {
+        padding-left: 0;
+        max-width: 90%;
+    }
+}
         
     </style>
 </head>
