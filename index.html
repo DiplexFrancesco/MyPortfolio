@@ -14,18 +14,19 @@
 
         .container {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex-direction: column;    
+            justify-content: flex-start; /* Sposta la sezione più in alto */
             align-items: flex-start; /* Allinea a sinistra */
             height: 100vh;
             text-align: left; /* Testo allineato a sinistra */
             padding-left: 40px; /* Opzionale: aggiunge un margine a sinistra */
+            padding-top: 20vh; /* Regola la posizione verticale */
+
 
         }
 
         .intro {
             font-size: 60px;
-            margin-top: 50px;
             margin-bottom: 60px;
         }
 
@@ -50,6 +51,7 @@
             color: #333;
             max-width: 600px;
             font-size: 18px;
+            padding-left: 40px;
         }
         
     </style>
