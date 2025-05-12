@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Il mio Portfolio</title>
 
     <style>
@@ -145,6 +145,14 @@
             
             color: #555;
         }
+        
+        video {
+            max-width: 100%; /* Adatta il video alla larghezza dello schermo */
+            height: auto; /* Mantiene le proporzioni corrette */
+            display: block; /* Evita problemi di visibilità */
+            margin: 0 auto; /* Centra il video */
+        }
+
 
 
         
@@ -164,9 +172,11 @@
     .profile-img {
         position: relative;
         width: 50%;
-        max-width: 150px;
         height: auto;
-        margin: 20px auto;
+        max-width: 100%; /* Adatta l'immagine alla larghezza dello schermo */
+        height: auto; /* Mantiene le proporzioni corrette */
+        display: block; /* Evita problemi di visibilità */
+        margin: 0 auto; /* Centra l'immagine */
     }
 
     .btnlink {
@@ -233,11 +243,9 @@
 
 <div class="projects-section">
     <h2 class="projects-title">Projects</h2>
-    <video  width="550" autoplay muted loop>
+    <video width="550" autoplay muted loop playsinline>
     <source src="Penguin_Core.mp4" type="video/mp4">
 </video>
-
-
     <div class="extra-column">
         <p><strong class=highlight>Penguin Sim</strong><br>
         My first self-teached project, Inspired by a real life cognitive experiment on Cope Penguins, you can go trough or just fool around.<br>
