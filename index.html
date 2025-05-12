@@ -233,8 +233,8 @@
 
 <div class="projects-section">
     <h2 class="projects-title">Projects</h2>
-    <video id="video" width="550" autoplay muted loop>
-    <source id="videoSource" src="Penguin_Intro.mp4" type="video/mp4">
+    <video  width="550" autoplay muted loop>
+    <source src="Penguin_Core.mp4" type="video/mp4">
 </video>
 
 
@@ -245,30 +245,7 @@
     </div>
 </div>
 
-<script>
-    window.onload = function() {
-        const video = document.getElementById("video");
-        const videoSource = document.getElementById("videoSource");
 
-        video.onmouseover = function() {
-            const newSource = document.createElement("source");
-            newSource.src = "Penguin_Core.mp4";
-            newSource.type = "video/mp4";
-
-            video.replaceChild(newSource, videoSource); // Sostituisce la sorgente
-            video.load(); // Ricarica il video con la nuova sorgente
-        };
-
-        video.onmouseout = function() {
-            const newSource = document.createElement("source");
-            newSource.src = "Penguin_Intro.mp4";
-            newSource.type = "video/mp4";
-
-            video.replaceChild(newSource, videoSource);
-            video.load();
-        };
-    };
-</script>
 
 
 
