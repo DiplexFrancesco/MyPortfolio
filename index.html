@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il mio Portfolio</title>
 
     <style>
-	
         body {
             background-color: white;
             font-family: "Aptos", sans-serif;
@@ -15,25 +15,37 @@
 
         .container {
             display: flex;
-            flex-direction: column;    
-            justify-content: flex-start; /* Sposta la sezione più in alto */
-            align-items: flex-start; /* Allinea a sinistra */
+            flex-direction: column;
+            justify-content: flex-start;
+            /* Sposta la sezione più in alto */
+            align-items: flex-start;
+            /* Allinea a sinistra */
             min-height: 100vh;
-            text-align: left; /* Testo allineato a sinistra */
-            padding-left: 350px; /* Opzionale: aggiunge un margine a sinistra */
-            padding-top: 22vh; /* Regola la posizione verticale */
+            text-align: left;
+            /* Testo allineato a sinistra */
+            padding-left: 350px;
+            /* Opzionale: aggiunge un margine a sinistra */
+            padding-top: 22vh;
+            /* Regola la posizione verticale */
 
 
         }
-        
+
         .profile-img {
-            width: 200px; /* Regola la dimensione */
-            height: 200px; /* Mantieni proporzioni */
-            border-radius: 50%; /* Rende l'immagine circolare */
-            object-fit: cover; /* Evita distorsioni */
-            position: relative; /* Posizione relativa */
-            top: -150px; /* Distanza dal bordo superiore */
-            right: -800px; /* Distanza dal bordo destro */
+            width: 200px;
+            /* Regola la dimensione */
+            height: 200px;
+            /* Mantieni proporzioni */
+            border-radius: 50%;
+            /* Rende l'immagine circolare */
+            object-fit: cover;
+            /* Evita distorsioni */
+            position: relative;
+            /* Posizione relativa */
+            top: -150px;
+            /* Distanza dal bordo superiore */
+            right: -800px;
+            /* Distanza dal bordo destro */
         }
 
 
@@ -41,8 +53,10 @@
 
         .btnlink {
             position: relative;
-            top: -300px; /* Distanza dal bordo superiore */
-            left: 1500px; /* Distanza dal bordo sinistro */
+            top: -300px;
+            /* Distanza dal bordo superiore */
+            left: 1500px;
+            /* Distanza dal bordo sinistro */
             background: none;
             color: #8B0000;
             padding: 10px 20px;
@@ -51,7 +65,7 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        
+
         .btnlink:hover {
             background-color: #8B0000;
             color: white;
@@ -59,8 +73,10 @@
 
         .btnmail {
             position: relative;
-            top: -300px; /* Distanza dal bordo superiore */
-            left: 1515px; /* Distanza dal bordo sinistro */
+            top: -300px;
+            /* Distanza dal bordo superiore */
+            left: 1515px;
+            /* Distanza dal bordo sinistro */
             background: none;
             color: #8B0000;
             padding: 10px 20px;
@@ -69,7 +85,7 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        
+
         .btnmail:hover {
             background-color: #8B0000;
             color: white;
@@ -82,120 +98,139 @@
         .intro {
             font-size: 60px;
             margin-bottom: 60px;
-             color: #333;
+            color: #333;
         }
 
         .description {
             font-size: 34px;
             color: #555;
         }
-        
-         .undertext {
+
+        .undertext {
             font-size: 20px;
             color: #555;
         }
-        
+
         .highlight {
             color: #333;
         }
 
-        
-        
-        
-        
-        
+
+
+
+
+
         /* Seconda pagina*/
-        
-        .background-section, .projects-section {
+
+        .background-section,
+        .projects-section {
             display: grid;
-            grid-template-columns: 36% 28% 36%; /* Prima colonna per il titolo, seconda per il testo, terza per extra */
+            grid-template-columns: 36% 28% 36%;
+            /* Prima colonna per il titolo, seconda per il testo, terza per extra */
             align-items: start;
             gap: 20px;
         }
-        
-        .background-title, .projects-title {
-            text-align: right; /* Allinea il testo del titolo a destra */
+
+        .background-title,
+        .projects-title {
+            text-align: right;
+            /* Allinea il testo del titolo a destra */
             color: #8B0000;
             font-size: 20px;
             font-weight: bold;
             text-transform: uppercase;
-            width: 100%; /* Assicura allineamento uniforme */
+            width: 100%;
+            /* Assicura allineamento uniforme */
         }
-        
-        
-        .background-text, .projects-text {
+
+
+        .background-text,
+        .projects-text {
             color: #333;
             font-size: 18px;
             margin-bottom: 50px;
-        	width: 100%; /* Assicura allineamento uniforme */
-            text-align: justify; /* Giustifica il testo */
+            width: 100%;
+            /* Assicura allineamento uniforme */
+            text-align: justify;
+            /* Giustifica il testo */
             color: #555;
         }
-        
+
         .extra-column {
             display: flex;
-            justify-content: flex-start; /* Allinea gli elementi a sinistra */
-            align-items: flex-start; /* Mantiene l'allineamento verticale */
-            text-align: justify; /* Testo allineato a sinistra */
+            justify-content: flex-start;
+            /* Allinea gli elementi a sinistra */
+            align-items: flex-start;
+            /* Mantiene l'allineamento verticale */
+            text-align: justify;
+            /* Testo allineato a sinistra */
             font-size: 16px;
-            width: 20%; /* Assicura allineamento uniforme */
-            
-            
-            
-            
+            width: 20%;
+            /* Assicura allineamento uniforme */
+
+
+
+
             color: #555;
         }
 
 
-        
-@media (max-width: 768px) {
 
-     body {
-        background-color: lightgray; /* Cambia colore solo sui dispositivi mobili */
-    }
-    
-    .container {
-        padding-left: 5%;
-        padding-top: 10vh;
-        align-items: center;
-        text-align: center;
-    }
+        @media (max-width: 768px) {
 
-    .profile-img {
-        position: relative;
-        width: 50%;
-        max-width: 150px;
-        height: auto;
-        margin: auto;
-    }
+            /* Rimuovere l'immagine su mobile */
+            .profile-img {
+                display: none;
+            }
 
-    .btnlink {
-        position: relative;
-        display: block;
-        margin: 20px auto;
-        font-size: 16px;
-    }
+            /* Centrare i pulsanti e affiancarli */
+            .btn-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                /* Spazio tra i pulsanti */
+            }
 
-    .background-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+            .btnlink,
+            .btnmail {
+                position: static;
+                display: inline-block;
+                margin: 10px;
+                width: auto;
+                /* Evita pulsanti troppo larghi */
+            }
 
-    .background-text {
-        padding-left: 0;
-        max-width: 90%;
-    }
-    
-    .extra-column {
-        width: 80%;
-        text-align: center;
-    }
-}
+            /* Scomporre la griglia e centrare titoli e testi */
+            .background-section,
+            .projects-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
 
-        
+            .background-title,
+            .projects-title {
+                text-align: center;
+                font-size: 24px;
+                /* Leggermente più grande per visibilità */
+            }
+
+            .background-text,
+            .projects-text {
+                max-width: 90%;
+                text-align: center;
+                font-size: 18px;
+            }
+
+            .extra-column {
+                width: 80%;
+                text-align: center;
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <!-- Intro -->
@@ -206,50 +241,50 @@
             in love with worldbuilding and storytelling.<br><br><br><br><br>
         </div>
         <div class="undertext">Currently studying Unreal 5 and C++<br>
-        I look forward to put myself to the test and grow.
+            I look forward to put myself to the test and grow.
         </div>
-      <img src="Profile pic.jpg" alt="Profile Picture" class="profile-img">
+        <img src="Profile pic.jpg" alt="Profile Picture" class="profile-img">
     </div>
-    
+
     <a href="https://www.linkedin.com/in/francesco-chiarantini">
-    <button class="btnlink">LinkedIn</button></a>
+        <button class="btnlink">LinkedIn</button></a>
     <a href="mailto:francesco.chiarantini@outlook.com?subject=body=">
-    <button class="btnmail">Mail</button></a>
-            
-    
-    
+        <button class="btnmail">Mail</button></a>
+
+
+
     <div class="background-section">
-    <h2 class="background-title">Background</h2>
-    <p class="background-text">After five years in the movie industry as a Location and Unit Manager
+        <h2 class="background-title">Background</h2>
+        <p class="background-text">After five years in the movie industry as a Location and Unit Manager
             on major projects such as <strong class="highlight">"Mission Impossibile: Dead Reckoning"</strong>,<strong class="highlight">
-            "House of Gucci"</strong> and <strong class="highlight">"The Old Guard II"</strong>, I decided to pursue my passion of game
+                "House of Gucci"</strong> and <strong class="highlight">"The Old Guard II"</strong>, I decided to pursue my passion of game
             development.<br><br>
-            
+
             Drawing from my experience working in both large and small teams, performing under high-stakes pressure,
-            and meeting deadlines through creative problem-solving, <strong class="highlight"> I am now focused on expanding my technical skills to match my deep passion for the gaming world</strong>, 
+            and meeting deadlines through creative problem-solving, <strong class="highlight"> I am now focused on expanding my technical skills to match my deep passion for the gaming world</strong>,
             where I dwell both as a consumer and a scholar.<br>
             I am always eager to deep-dive into market analysis and emerging trends, as well as monitoring the trajectories of major studios. (Indie and AA games are the next winning bet, if you ask me.)<br><br>
-            
+
             I have obtained the <strong class="highlight">Epic Games certification in Game Design for Unreal Engine 5</strong>, with a focus on gameplay programming. I have been working on several personal projects while also studying the fundamentals of C++ programming.<br><br></p>
-    <div class="extra-column">
-        <p></p>
+        <div class="extra-column">
+            <p></p>
+        </div>
     </div>
-</div>
 
 
-<div class="projects-section">
-    <h2 class="projects-title">Projects</h2>
-    <video  width="550" autoplay muted loop>
-    <source src="Penguin_Core.mp4" type="video/mp4">
-</video>
+    <div class="projects-section">
+        <h2 class="projects-title">Projects</h2>
+        <video width="550" autoplay muted loop>
+            <source src="Penguin_Core.mp4" type="video/mp4">
+        </video>
 
 
-    <div class="extra-column">
-        <p><strong class="highlight">Penguin Sim</strong><br>
-        My first self-teached project, Inspired by a real life cognitive experiment on Cope Penguins, you can go trough or just fool around.<br>
-        It features interactive objects, an AI that will catch you if escaping and a personalization system for the penguin, which I modelled and animated myself.<br><br>Not a Dimond, but it shines.</p>
+        <div class="extra-column">
+            <p><strong class="highlight">Penguin Sim</strong><br>
+                My first self-teached project, Inspired by a real life cognitive experiment on Cope Penguins, you can go trough or just fool around.<br>
+                It features interactive objects, an AI that will catch you if escaping and a personalization system for the penguin, which I modelled and animated myself.<br><br>Not a Dimond, but it shines.</p>
+        </div>
     </div>
-</div>
 
 
 
@@ -257,4 +292,5 @@
 
 
 </body>
+
 </html>
