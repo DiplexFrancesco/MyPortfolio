@@ -17,7 +17,7 @@
             flex-direction: column;    
             justify-content: flex-start; /* Sposta la sezione più in alto */
             align-items: flex-start; /* Allinea a sinistra */
-            height: 100vh;
+            min-height: 100vh;
             text-align: left; /* Testo allineato a sinistra */
             padding-left: 350px; /* Opzionale: aggiunge un margine a sinistra */
             padding-top: 22vh; /* Regola la posizione verticale */
@@ -116,6 +116,11 @@
         }
         
 @media (max-width: 768px) {
+
+     body {
+        background-color: lightgray; /* Cambia colore solo sui dispositivi mobili */
+    }
+    
     .container {
         padding-left: 5%;
         padding-top: 10vh;
