@@ -233,7 +233,7 @@
 
 <div class="projects-section">
     <h2 class="projects-title">Projects</h2>
-    <video width="780" controls>
+    <video id="video" width="780" autoplay muted loop playsinline>
         <source src="Penguin_Intro.mp4" type="video/mp4">
         Il tuo browser non supporta i video HTML5.
     </video>
@@ -244,6 +244,18 @@
         It features interactive objects, an AI that will catch you if escaping and a personalization system for the penguin, which I modelled and animated myself.<br><br>Not a Dimond, but It shines.</p>
     </div>
 </div>
+
+<script>
+    const video = document.getElementById("video");
+
+    video.onmouseover = function() {
+        video.src = "Penguin_Core.mp4"; // Cambia video al passaggio del mouse
+    };
+
+    video.onmouseout = function() {
+        video.src = "Penguin_Intro.mp4"; // Torna al video originale quando il mouse esce
+    };
+</script>
 
 
 </body>
