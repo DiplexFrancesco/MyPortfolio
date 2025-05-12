@@ -7,10 +7,13 @@
     <title>Il mio Portfolio</title>
 
     <style>
-        body {
+        html, body {
             background-color: white;
             font-family: "Aptos", sans-serif;
             margin: 0;
+            overflow-x: hidden; /* Disabilita lo scroll laterale */
+            width: 100vw; /* Previene spostamenti involontari */
+
         }
 
         .container {
@@ -129,6 +132,8 @@
             /* Prima colonna per il titolo, seconda per il testo, terza per extra */
             align-items: start;
             gap: 20px;
+            padding-bottom: 40px; /* Aggiunge spazio extra in coda */
+
         }
 
         .background-title,
@@ -282,6 +287,23 @@
             <p><strong class="highlight">Penguin Sim</strong><br>
                 My first self-teached project, Inspired by a real life cognitive experiment on Cope Penguins, you can go trough or just fool around.<br>
                 It features interactive objects, an AI that will catch you if escaping and a personalization system for the penguin, which I modelled and animated myself.<br><br>Not a Dimond, but it shines.</p>
+        </div>
+    </div>
+    
+    
+    
+     <div class="projects-section">
+        <h2 class="projects-title"></h2>
+        <video width="550" autoplay muted loop>
+            <source src="Workshop.mp4" type="video/mp4">
+        </video>
+
+
+        <div class="extra-column">
+            <p><strong class="highlight">Course Workshop</strong><br>
+               After completing the Unreal Engine 5 course, I applied what I had learned by experimenting with various
+               features and gameplay mechanics to create a fun and dynamic experience.<br>
+                I worked on AI that reacts to sound and attacks, special moves, consumable items with an interactive inventory, and—my favorite— the throwing shield.</p>
         </div>
     </div>
 
