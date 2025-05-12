@@ -170,10 +170,13 @@
     }
 
     .profile-img, video {
-    max-width: 90%; /* Limita la grandezza su schermi piccoli */
-    height: auto;
-    display: block;
-    margin: 20px auto; /* Mantiene centrato */
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        max-height: 400px; /* Limita l'altezza per evitare che diventi troppo grande */
+    }
+
 }
 
        .btnlink, .btnmail {
@@ -197,11 +200,19 @@
     }
     
     .background-section, .projects-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
+    
+     .extra-column {
+        width: 80%; /* Allarga la colonna su schermi piccoli */
+        font-size: 18px; /* Leggermente più grande per migliore leggibilità */
+        text-align: center; /* Opzionale: migliora il layout su mobile */
+        margin: 0 auto; /* Centra la colonna */
+    }
+
 
 }
         
