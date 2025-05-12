@@ -108,7 +108,7 @@
         
         .background-section, .projects-section {
             display: grid;
-            grid-template-columns: 25% 40% 35%; /* Prima colonna per il titolo, seconda per il testo, terza per extra */
+            grid-template-columns: 36% 28% 36%; /* Prima colonna per il titolo, seconda per il testo, terza per extra */
             align-items: start;
             gap: 20px;
         }
@@ -233,9 +233,8 @@
 
 <div class="projects-section">
     <h2 class="projects-title">Projects</h2>
-    <video id="video" width="780" autoplay muted loop playsinline>
-        <source src="Penguin_Intro.mp4" type="video/mp4">
-        Il tuo browser non supporta i video HTML5.
+    <video id="video" width="550" controls autoplay muted loop>
+    <source id="videoSource" src="Penguin_Intro.mp4" type="video/mp4">
     </video>
 
     <div class="extra-column">
@@ -247,15 +246,19 @@
 
 <script>
     const video = document.getElementById("video");
+    const videoSource = document.getElementById("videoSource");
 
     video.onmouseover = function() {
-        video.src = "Penguin_Core.mp4"; // Cambia video al passaggio del mouse
+        videoSource.setAttribute("src", "Penguin_Core.mp4"); // Cambia la sorgente del video
+        video.load(); // Ricarica il video con la nuova sorgente
     };
 
     video.onmouseout = function() {
-        video.src = "Penguin_Intro.mp4"; // Torna al video originale quando il mouse esce
+        videoSource.setAttribute("src", "Penguin_Intro.mp4"); // Torna al video originale
+        video.load(); // Ricarica il video
     };
 </script>
+
 
 
 </body>
