@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Il mio Portfolio</title>
 
     <style>
@@ -177,30 +177,15 @@
 
 
         @media (max-width: 768px) {
-
-            /* Rimuovere l'immagine su mobile */
-            .profile-img {
-                display: none;
+            .container {
+                padding-left: 0;
+                /* Elimina margine sinistro */
+                text-align: center;
+                /* Centra il contenuto */
+                align-items: center;
+                /* Mantiene tutto centrato */
             }
 
-            /* Centrare i pulsanti e affiancarli */
-            .btn-container {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-                /* Spazio tra i pulsanti */
-            }
-
-            .btnlink,
-            .btnmail {
-                position: static;
-                display: inline-block;
-                margin: 10px;
-                width: auto;
-                /* Evita pulsanti troppo larghi */
-            }
-
-            /* Scomporre la griglia e centrare titoli e testi */
             .background-section,
             .projects-section {
                 display: flex;
@@ -212,21 +197,35 @@
             .background-title,
             .projects-title {
                 text-align: center;
-                font-size: 24px;
-                /* Leggermente più grande per visibilità */
+                width: 100%;
+                /* Assicura allineamento uniforme */
             }
 
             .background-text,
             .projects-text {
                 max-width: 90%;
                 text-align: center;
-                font-size: 18px;
+                justify-content: center;
             }
 
-            .extra-column {
-                width: 80%;
-                text-align: center;
+            .btn-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                width: 100%;
             }
+
+            .btnlink,
+            .btnmail {
+                display: inline-block;
+                margin: 10px;
+            }
+
+        .extra-column {
+            width: 80%;
+            text-align: center;
+            justify-content: center;
+        }
         }
     </style>
 </head>
