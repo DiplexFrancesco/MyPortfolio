@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il mio Portfolio</title>
 
     <style>
@@ -95,7 +95,7 @@
             color: #555;
         }
         
-        ."highlight" {
+        .highlight {
             color: #333;
         }
 
@@ -145,14 +145,6 @@
             
             color: #555;
         }
-        
-        video {
-            max-width: 100%; /* Adatta il video alla larghezza dello schermo */
-            height: auto; /* Mantiene le proporzioni corrette */
-            display: block; /* Evita problemi di visibilità */
-            margin: 0 auto; /* Centra il video */
-        }
-
 
 
         
@@ -169,23 +161,19 @@
         text-align: center;
     }
 
-    .profile-img, video {
-        max-width: 90%;
+    .profile-img {
+        position: relative;
+        width: 50%;
+        max-width: 150px;
         height: auto;
-        display: block;
-        margin: 0 auto;
-        max-height: 400px; /* Limita l'altezza per evitare che diventi troppo grande */
+        margin: 20px auto;
     }
 
-}
-
-       .btnlink, .btnmail {
-        position: static; /* Evita il problema degli angoli */
+    .btnlink {
+        position: relative;
         display: block;
-        margin: 10px auto; /* Centra i bottoni */
-        font-size: 16px; /* Riduce leggermente la dimensione per adattarsi meglio */
-        text-align: center;
-        width: 80%; /* Evita che siano troppo larghi o piccoli */
+        margin: 20px auto;
+        font-size: 16px;
     }
 
     .background-section {
@@ -198,22 +186,6 @@
         padding-left: 0;
         max-width: 90%;
     }
-    
-    .background-section, .projects-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-     .extra-column {
-        width: 80%; /* Allarga la colonna su schermi piccoli */
-        font-size: 18px; /* Leggermente più grande per migliore leggibilità */
-        text-align: center; /* Opzionale: migliora il layout su mobile */
-        margin: 0 auto; /* Centra la colonna */
-    }
-
-
 }
         
     </style>
@@ -224,7 +196,7 @@
     <div class="container">
         <div class="intro">Hi!</div>
         <div class="description">
-            I'm <strong class="highlight">Francesco Chiarantini</strong>, a passionate gamer<br>
+            I'm <strong class=highlight>Francesco Chiarantini</strong>, a passionate gamer<br>
             in love with worldbuilding and storytelling.<br><br><br><br><br>
         </div>
         <div class="undertext">Currently studying Unreal 5 and C++<br>
@@ -243,16 +215,16 @@
     <div class="background-section">
     <h2 class="background-title">Background</h2>
     <p class="background-text">After five years in the movie industry as a Location and Unit Manager
-            on major projects such as <strong class="highlight">"Mission Impossibile: Dead Reckoning"</strong>,<strong class="highlight">
-            "House of Gucci"</strong> and <strong class="highlight">"The Old Guard II"</strong>, I decided to pursue my passion of game
+            on major projects such as <strong class=highlight>"Mission Impossibile: Dead Reckoning"</strong>,<strong class=highlight>
+            "House of Gucci"</strong> and <strong class=highlight>"The Old Guard II"</strong>, I decided to pursue my passion of game
             development.<br><br>
             
             Drawing from my experience working in both large and small teams, performing under high-stakes pressure,
-            and meeting deadlines through creative problem-solving, <strong class="highlight"> I am now focused on expanding my technical skills to match my deep passion for the gaming world</strong>, 
+            and meeting deadlines through creative problem-solving, <strong class=highlight> I am now focused on expanding my technical skills to match my deep passion for the gaming world</strong>, 
             where I dwell both as a consumer and a scholar.<br>
             I am always eager to deep-dive into market analysis and emerging trends, as well as monitoring the trajectories of major studios. (Indie and AA games are the next winning bet, if you ask me.)<br><br>
             
-            I have obtained the <strong class="highlight">Epic Games certification in Game Design for Unreal Engine 5</strong>, with a focus on gameplay programming. I have been working on several personal projects while also studying the fundamentals of C++ programming.<br><br></p>
+            I have obtained the <strong class=highlight>Epic Games certification in Game Design for Unreal Engine 5</strong>, with a focus on gameplay programming. I have been working on several personal projects while also studying the fundamentals of C++ programming.<br><br></p>
     <div class="extra-column">
         <p></p>
     </div>
@@ -261,13 +233,15 @@
 
 <div class="projects-section">
     <h2 class="projects-title">Projects</h2>
-    <video width="550" autoplay muted loop playsinline>
-    <source src="Penguin_Core.mp4" type="video/mp4">
+    <video  width="550" autoplay muted loop>
+    <source src="Penguin_Intro.mp4" type="video/mp4">
 </video>
+
+
     <div class="extra-column">
-        <p><strong class="highlight">Penguin Sim</strong><br>
+        <p><strong class=highlight>Penguin Sim</strong><br>
         My first self-teached project, Inspired by a real life cognitive experiment on Cope Penguins, you can go trough or just fool around.<br>
-        It features interactive objects, an AI that will catch you if escaping and a personalization system for the penguin, which I modelled and animated myself.<br><br>Not a Dimond, but it shines.</p>
+        It features interactive objects, an AI that will catch you if escaping and a personalization system for the penguin, which I modelled and animated myself.<br><br>Not a Dimond, but It shines.</p>
     </div>
 </div>
 
@@ -278,8 +252,3 @@
 
 </body>
 </html>
-
-
-
-
-
